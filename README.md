@@ -32,6 +32,8 @@ The driver that adds support for Oracle database is a jar (**liferay-portal-orac
 
 To generate the driver for Oracle database just follow the instructions below.
 
+You can download the binary jar [liferay-portal-oracledb-support-1.0-SNAPSHOT.jar](https://github.com/amusarra/liferay-portal-oracledb-support/releases/download/v1.0/liferay-portal-oracledb-support-1.0-SNAPSHOT.jar), by doing so you can avoid doing the build.
+
 ```
 $ git clone https://github.com/amusarra/liferay-portal-oracledb-support.git
 $ mvn package
