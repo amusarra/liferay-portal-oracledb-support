@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>it.dontesta.labs.liferay.portal.db</groupId>
+  <artifactId>liferay-portal-oracledb-support</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>Liferay Portal Oracle Database Support</name>
+  <description>Liferay Portal Oracle Database Support</description>
+	<url>http://www.dontesta.it</url>
+	<inceptionYear>2016</inceptionYear>
+	<licenses>
+		<license>
+			<name>GNU General Public License (GPLv2.1)</name>
+			<url>http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html</url>
+			<distribution>manual</distribution>
+		</license>
+	</licenses>
+	<organization>
+		<name>Antonio Musarra's Blog</name>
+		<url>http://www.dontesta.it</url>
+	</organization>
+  <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <liferay.portal.impl.version>2.3.0</liferay.portal.impl.version>
+    <liferay.portal.kernel.version>2.3.0</liferay.portal.kernel.version>
+	</properties>
+  <developers>
+    <developer>
+      <id>amusarra</id>
+      <name>Antonio Musarra</name>
+      <email>antonio.musarra@gmail.com</email>
+      <url>http://www.dontesta.it/blog</url>
+      <timezone>+1</timezone>
+      <roles>
+        <role>IT Senior Consultant</role>
+        <role>Senior Software Architect</role>
+        <role>Liferay Expert</role>
+      </roles>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.0</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.liferay.portal</groupId>
+    	<artifactId>com.liferay.portal.kernel</artifactId>
+    	<version>${liferay.portal.kernel.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+    	<groupId>com.liferay.portal</groupId>
+    	<artifactId>com.liferay.portal.impl</artifactId>
+    	<version>${liferay.portal.impl.version}</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <scm>
+    <connection>scm:git:git@github.com:amusarra/liferay-portal-oracledb-support.git</connection>
+    <url>scm:git:git@github.com:amusarra/liferay-portal-oracledb-support.git</url>
+    <developerConnection>scm:git:git@github.com:amusarra/liferay-portal-oracledb-support.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
+  <issueManagement>
+    <url>https://github.com/amusarra/liferay-portal-oracledb-support/issues</url>
+    <system>GitHub</system>
+  </issueManagement>
+</project>
