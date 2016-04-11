@@ -1,3 +1,5 @@
+![travis ci](https://travis-ci.org/amusarra/liferay-portal-oracledb-support.svg?branch=master)
+
 # Welcome to Oracle DB support for Liferay CE 7.0 GA1
 
 Those who follow Liferay is aware of the fact that the Community Edition version 7 of Liferay, were eliminated quite a bit of components App Server, Database & Clustering Support. For more detail information you can read the blog post by [Bryan Cheung]( https://www.liferay.com/it/web/bryan.cheung/blog/-/blogs/liferay-portal-7-ce-app-server-database-clustering-support) published on April 7, 2016.
