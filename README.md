@@ -19,6 +19,17 @@ In short we must:
 * Implement the SPI interface [com.liferay.portal.kernel.dao.db.DBFactory](https://github.com/liferay/liferay-portal/blob/2960360870ae69360861a720136e082a06c5548f/portal-kernel/src/com/liferay/portal/kernel/dao/db/DBFactory.java). Implementation class inside this project is **OracleDBFactory.java**
 * Implement the abstract class [com.liferay.portal.dao.db.BaseDB](https://github.com/liferay/liferay-portal/blob/master/portal-impl/src/com/liferay/portal/dao/db/BaseDB.java) for Oracle DB. Implementation class inside this project is **OracleDB.java**
 
+The following code shows how service providers are loaded via SPI.
+```
+public DBManagerImpl() {
+  ServiceLoader<DBFactory> serviceLoader = ServiceLoader.load(
+    DBFactory.class, DBManagerImpl.class.getClassLoader());
+
+  for (DBFactory dbFactory : serviceLoader) {
+    _dbFactories.put(dbFactory.getDBType(), dbFactory);
+  }
+}
+```
 In the figure below shows the complete class diagram for OracleDB.
 
 ![Class Diagram for OracleDB](http://www.dontesta.it/blog/wp-content/uploads/2014/02/OracleDB.png)
