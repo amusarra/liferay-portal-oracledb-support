@@ -42,9 +42,9 @@ In the figure below shows the complete class diagram for OracleDB.
 ![Class Diagram for OracleDB](http://www.dontesta.it/blog/wp-content/uploads/2014/02/OracleDB.png)
 
 ## 2. Build project
-**Requirements for build project**
+Requirements for build project
 1. Sun/Oracle JDK 1.7
-2. Maven 3.x (for build project)
+2. Maven 3.x (for build project) or Gradle 2.x
 
 The driver that adds support for Oracle database is a jar (**liferay-portal-oracledb-support-${version}.jar**) which then will be installed in ROOT/WEB-INF/lib (for apache tomcat).
 
@@ -62,6 +62,15 @@ the build process create the jar inside the (maven) target directory:
 ```
 liferay-portal-oracledb-support-1.0-SNAPSHOT.jar
 ```
+
+If you have a Gradle build system, then you can build jar by the following command
+
+```
+$ git clone https://github.com/amusarra/liferay-portal-oracledb-support.git
+$ gradle build
+```
+
+the build process create the jar inside the build/libs directory.
 
 ## 3. Install Liferay CE 7 on Oracle Database
 
