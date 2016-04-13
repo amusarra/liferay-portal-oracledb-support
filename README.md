@@ -30,6 +30,13 @@ public DBManagerImpl() {
   }
 }
 ```
+To register your service provider, you create a provider configuration file, which is stored in the **META-INF/services** directory of the service provider's JAR file. The name of the configuration file is the fully qualified class name of the service provider, in which each component of the name is separated by a period (.), and nested classes are separated by a dollar sign ($).
+
+The provider configuration file contains the fully qualified class names (FQDN) of your service providers, one name per line. The file must be UTF-8 encoded. Additionally, you can include comments in the file by beginning the comment line with the number sign (#).
+
+Our file is called com.liferay.portal.kernel.dao.db.DBFactory and contain the FQDN of the class [it.dontesta.labs.liferay.portal.dao.db.OracleDBFactory](https://github.com/amusarra/liferay-portal-oracledb-support/blob/master/src/main/java/it/dontesta/labs/liferay/portal/dao/db/OracleDBFactory.java)
+
+
 In the figure below shows the complete class diagram for OracleDB.
 
 ![Class Diagram for OracleDB](http://www.dontesta.it/blog/wp-content/uploads/2014/02/OracleDB.png)
