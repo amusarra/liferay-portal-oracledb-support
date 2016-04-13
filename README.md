@@ -70,6 +70,7 @@ The parameters of my Oracle instance are:
 * SID: XE
 
 For the installation of Liferay follow the following steps:
+
 1. Download [Liferay CE 7 GA1 Tomcat Bundle](https://sourceforge.net/projects/lportal/files/Liferay%20Portal/7.0.0%20GA1/liferay-portal-tomcat-7.0-ce-ga1-20160331161017956.zip/download) from sourceforge
 2. Extract the Liferay bundle (in my case $LIFERAY_HOME is /opt/liferay-portal-7.0-ce-ga1-node-1)
 3. Copy the jar **liferay-portal-oracledb-support-${version}.jar** in $LIFERAY_HOME/$TOMCAT_HOME/webapps/ROOT/WEB-INF/lib
