@@ -41,7 +41,7 @@ Our file is called com.liferay.portal.kernel.dao.db.DBFactory and contain the FQ
 
 In the figure below shows the complete class diagram for OracleDB.
 
-![Class Diagram for OracleDB](http://www.dontesta.it/blog/wp-content/uploads/2014/02/OracleDB.png)
+![Class Diagram for OracleDB](https://www.dontesta.it/wp-content/uploads/2014/02/OracleDB.png)
 
 ## 2. Build project
 Requirements for build project
