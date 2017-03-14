@@ -141,6 +141,6 @@ Below you can see the portal-ext.properties
 
 You can see the my complete [catalina.out](https://gist.github.com/amusarra/7f7d5c2f4d73e88f55f092d4d1853ff9) log file and following some screenshots of DB.
 
-![Liferay CE 7 GA1 on Oracle ](http://www.dontesta.it/blog/wp-content/uploads/2014/02/Liferay7CEOnOracleDataBase.png)
+![Liferay CE 7 GA1 on Oracle ](https://www.dontesta.it/wp-content/uploads/2014/02/Liferay7CEOnOracleDataBase.png)
 
-![Liferay CE 7 GA1 on Oracle ](http://www.dontesta.it/blog/wp-content/uploads/2014/02/Liferay7CEOnOracleDataBase_1.png)
+![Liferay CE 7 GA1 on Oracle ](https://www.dontesta.it/wp-content/uploads/2014/02/Liferay7CEOnOracleDataBase_1.png)
