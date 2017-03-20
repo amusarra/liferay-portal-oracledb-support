@@ -16,6 +16,10 @@ This sample project demonstrates how to add support to the Oracle database. Life
 
 **Attention update:** The driver works with the release GA1, GA2 and GA3 of the Liferay 7 CE.
 
+In the following video, I will guide you step-by-step instructions on how to add support for Oracle Database to Liferay 7 Community Edition in the bundled version of **Wildfly**.
+
+[![Liferay 7 Wildfly: How to add support for Oracle DB ](https://img.youtube.com/vi/7fojCjko7Ac/0.jpg)](https://www.youtube.com/watch?v=7fojCjko7Ac)
+
 ## 1. Introduction
 To extend support to other databases, Liferay has decided to refactory code to use Java [*SPI (Service Provider Interface)*](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html). SPI is the mechanism that allows you to extend / change the behavior within a system without changing the source. It includes interfaces, classes or methods that the user extends or implements in order to obtain a certain functionality.
 
