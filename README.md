@@ -1,18 +1,20 @@
 ![travis ci](https://travis-ci.org/amusarra/liferay-portal-oracledb-support.svg?branch=master)
 
-# Welcome to Oracle DB support for Liferay CE 7.0 GA1
+# Welcome to Oracle DB support for Liferay CE 7.0
 
 [![Join the chat at https://gitter.im/amusarra/liferay-portal-oracledb-support](https://badges.gitter.im/amusarra/liferay-portal-oracledb-support.svg)](https://gitter.im/amusarra/liferay-portal-oracledb-support?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Those who follow Liferay is aware of the fact that the Community Edition version 7 of Liferay, were eliminated quite a bit of components App Server, Database & Clustering Support. For more detail information you can read the blog post by [Bryan Cheung]( https://www.liferay.com/it/web/bryan.cheung/blog/-/blogs/liferay-portal-7-ce-app-server-database-clustering-support) published on April 7, 2016.
 
-The Liferay 7 CE GA1 no more support OOTB (Out Of The Box):
+The Liferay 7 CE no more support OOTB (Out Of The Box):
 * Application Server: Oracle WebLogic, IBM WebSphere
 * Clustering
 * MultiVM Cache
 * Oracle Database, Microsoft SQL Server, IBM DB2, Sybase DB
 
 This sample project demonstrates how to add support to the Oracle database. Liferay has performed refactorting the code so that it is possible and easy to add support for databases no longer supported OOTB.
+
+**Attention update:** The driver works with the release GA1, GA2 and GA3 of the Liferay 7 CE.
 
 ## 1. Introduction
 To extend support to other databases, Liferay has decided to refactory code to use Java [*SPI (Service Provider Interface)*](https://docs.oracle.com/javase/tutorial/sound/SPI-intro.html). SPI is the mechanism that allows you to extend / change the behavior within a system without changing the source. It includes interfaces, classes or methods that the user extends or implements in order to obtain a certain functionality.
@@ -45,7 +47,7 @@ In the figure below shows the complete class diagram for OracleDB.
 
 ## 2. Build project
 Requirements for build project
-1. Sun/Oracle JDK 1.7
+1. Sun/Oracle JDK 1.8
 2. Maven 3.x (for build project) or Gradle 2.x
 
 The driver that adds support for Oracle database is a jar (**liferay-portal-oracledb-support-${version}.jar**) which then will be installed in ROOT/WEB-INF/lib (for apache tomcat).
@@ -56,6 +58,7 @@ You can download the binary jar [liferay-portal-oracledb-support-1.0-SNAPSHOT.ja
 
 ```
 $ git clone https://github.com/amusarra/liferay-portal-oracledb-support.git
+$ cd liferay-portal-oracledb-support
 $ mvn package
 ```
 
@@ -69,6 +72,7 @@ If you have a Gradle build system, then you can build jar by the following comma
 
 ```
 $ git clone https://github.com/amusarra/liferay-portal-oracledb-support.git
+$ cd liferay-portal-oracledb-support
 $ gradle build
 ```
 
