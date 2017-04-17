@@ -16,6 +16,8 @@ This sample project demonstrates how to add support to the Oracle database. Life
 
 **Attention update:** The driver works with the release GA1, GA2 and GA3 of the Liferay 7 CE.
 
+[<img src="https://www.dontesta.it/wp-content/uploads/2017/04/PayPalMeAntonioMusarra.png">](https://paypal.me/AntonioMusarra)
+
 In the following video, I will guide you step-by-step instructions on how to add support for Oracle Database to Liferay 7 Community Edition in the bundled version of **Wildfly**.
 
 [![Liferay 7 Wildfly: How to add support for Oracle DB ](https://img.youtube.com/vi/7fojCjko7Ac/0.jpg)](https://www.youtube.com/watch?v=7fojCjko7Ac)
